@@ -44,7 +44,7 @@ body::after {
     width: 0vw;
   }
   100% {
-    width: 50vw;
+    width: 50%;
   }
 }
 
@@ -54,72 +54,22 @@ body::after {
     width: 50% !important;
   }
 }
-@media (min-width: 750px) and (max-width: 767.98px) {
-  body::after {
-    width: 100% !important;
-    height: 47.5%;
-  }
-}
-@media (min-width: 700px) and (max-width: 749.98px) {
+@media (min-width: 0px) and (max-width: 767.98px) {
   body::after {
     width: 100% !important;
     height: 50%;
+    animation: body-bg 1.5s ease-in-out forwards;
+  }
+  @keyframes body-bg {
+    0% {
+      height: 0vw;
+    }
+    100% {
+      height: 50%;
+    }
   }
 }
-@media (min-width: 650px) and (max-width: 699.98px) {
-  body::after {
-    width: 100% !important;
-    height: 48%;
-  }
-}
-@media (min-width: 600px) and (max-width: 649.98px) {
-  body::after {
-    width: 100% !important;
-    height: 50%;
-  }
-}
-@media (min-width: 550px) and (max-width: 599.98px) {
-  body::after {
-    width: 100% !important;
-    height: 47%;
-  }
-}
-@media (min-width: 500px) and (max-width: 549.98px) {
-  body::after {
-    width: 100% !important;
-    height: 49%;
-  }
-}
-@media (min-width: 450px) and (max-width: 499.98px) {
-  body::after {
-    width: 100% !important;
-    height: 48.5%;
-  }
-}
-@media (min-width: 400px) and (max-width: 449.98px) {
-  body::after {
-    width: 100% !important;
-    height: 47.5%;
-  }
-}
-@media (min-width: 350px) and (max-width: 399.98px) {
-  body::after {
-    width: 100% !important;
-    height: 48%;
-  }
-}
-@media (min-width: 300px) and (max-width: 349.98px) {
-  body::after {
-    width: 100% !important;
-    height: 48.5%;
-  }
-}
-@media (min-width: 0px) and (max-width: 299.98px) {
-  body::after {
-    width: 100% !important;
-    height: 49%;
-  }
-}
+
 
 /* white line code at the top left corner  */
 body::before {
@@ -142,7 +92,7 @@ body::before {
   margin-inline: auto;
   overflow: hidden;
 }
-/* Container responsive */
+/* Container responsive*/
 @media (min-width: 1100px) and (max-width: 1149.98px) {
   .container {
     min-height: 104vh;
@@ -232,7 +182,7 @@ body::before {
   .container {
     min-height: 390vh;
   }
-}
+} 
 
 nav {
   padding: 2rem 0;
@@ -252,7 +202,7 @@ nav {
 /* responsive */
 @media (min-width: 0px) and (max-width: 767.98px) {
   .nav__links {
-    gap: 5rem;
+    gap: 5rem !important;
   }
 }
 
@@ -295,6 +245,15 @@ nav {
   font-weight: 900;
   color: var(--primary-color);
 }
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .letter-s {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
 .container img {
   position: absolute;
   width: 0%;
@@ -303,6 +262,12 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 50 rgba(0, 0, 0, 0.8));
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .container img {
+    top: 50%;
+    position: fixed;
+  }
 }
 
 .container h4 {
@@ -339,6 +304,12 @@ nav {
   background-color: transparent;
   border: 1px solid var(--white);
 }
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .container .print {
+    top: 50%;
+    position: fixed;
+  }
+}
 .container .catalog {
   top: 25%;
   left: 3%;
@@ -347,6 +318,12 @@ nav {
   color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .container .catalog {
+    top: 25%;
+    position: fixed;
+  }
 }
 
 /* footer styles */
@@ -358,13 +335,24 @@ nav {
   font-size: 1.2rem;
   font-weight: 500;
 }
-
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .container h5 {
+    top: 51%;
+    position: fixed;
+  }
+}
 .container h5:after {
   position: absolute;
   content: "";
   height: 1px;
   width: 100px;
   top: 50%;
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .container h5:after {
+    top: 50%;
+    position: fixed;
+  }
 }
 .feature-1 {
   color: var(--text-dark);
@@ -475,4 +463,26 @@ nav {
 
 .footer__links li a:hover {
   color: var(--primary-color);
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .nav__links {
+    gap: 1rem;
+  }
+
+  .container h4 {
+    position: fixed;
+    top: 50%;
+    font-size: 3rem;
+  }
+
+  .container img {
+    width: 0%;
+  }
+
+  .footer {
+    text-align: center;
+    gap: 1rem;
+  }
 }
