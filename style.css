@@ -88,12 +88,13 @@ body::before {
   position: relative;
   isolation: isolate;
   min-height: 100vh;
-  min-width: var(--max-width);
+  /* min-width: var(--max-width); */
   margin-inline: auto;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 /* Container responsive*/
-@media (min-width: 1100px) and (max-width: 1149.98px) {
+/* @media (min-width: 1100px) and (max-width: 1149.98px) {
   .container {
     min-height: 104vh;
   }
@@ -182,7 +183,7 @@ body::before {
   .container {
     min-height: 390vh;
   }
-} 
+}  */
 
 nav {
   padding: 2rem 0;
@@ -202,7 +203,7 @@ nav {
 /* responsive */
 @media (min-width: 0px) and (max-width: 767.98px) {
   .nav__links {
-    gap: 5rem !important;
+    gap: 2rem !important;
   }
 }
 
@@ -245,11 +246,17 @@ nav {
   font-weight: 900;
   color: var(--primary-color);
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .letter-s{
+    font-size: 35rem;
+  }
+}
 @media (min-width: 0px) and (max-width: 767.98px) {
   .letter-s {
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-size: 25rem;
   }
 }
 
@@ -258,15 +265,22 @@ nav {
   position: absolute;
   width: 0%;
   min-width: 200px;
-  top: 53%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 50 rgba(0, 0, 0, 0.8));
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container img{
+    min-width: 180px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 767.98px) {
   .container img {
     top: 50%;
     position: fixed;
+    min-width: 140px;
   }
 }
 
@@ -278,12 +292,42 @@ nav {
   color: var(--white);
   letter-spacing: 25px;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container h4{
+    font-size: 3rem;
+    letter-spacing: 20px;
+    top: 51%;
+  }
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .container h4{
+    font-size: 2rem;
+    letter-spacing: 20px;
+    top: 50%;
+  }
+}
 
 .text__left {
   transform: translate(calc(-50% - 250px), -50%);
 }
 .text__right {
   transform: translate(calc(-50% + 250px), -50%);
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .text__left {
+    transform: translate(calc(-25% - 250px), -50%);
+  }
+  .text__right {
+    transform: translate(calc(-75% + 250px), -50%);
+  }
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .text__left {
+    transform: translate(calc(-25% - 160px), -50%);
+  }
+  .text__right {
+    transform: translate(calc(-75% + 160px), -50%);
+  }
 }
 
 .container .explore {
@@ -293,6 +337,12 @@ nav {
   color: var(--text-dark);
   background-color: var(--white);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container .explore{
+    position: fixed;
+    left: 41.5%;
+  }
 }
 
 .container .print {
@@ -318,6 +368,11 @@ nav {
   color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container .catalog {
+    left: 1%;
+  }
 }
 @media (min-width: 0px) and (max-width: 767.98px) {
   .container .catalog {
@@ -370,6 +425,34 @@ nav {
   color: var(--white);
   transform: translate(calc(-50% + 300px), calc(-50% + 200px));
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .feature-1 {
+    transform: translate(calc(-50% - 260px), calc(-50% - 165px));
+  }
+  .feature-2 {
+    transform: translate(calc(-50% + 260px), calc(-50% - 165px));
+  }
+  .feature-3 {
+    transform: translate(calc(-50% - 260px), calc(-50% + 200px));
+  }
+  .feature-4 {
+    transform: translate(calc(-50% + 260px), calc(-50% + 200px));
+  }
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .feature-1 {
+    transform: translate(calc(-50% - 200px), calc(-50% - 135px));
+  }
+  .feature-2 {
+    transform: translate(calc(-50% + 200px), calc(-50% - 135px));
+  }
+  .feature-3 {
+    transform: translate(calc(-50% - 200px), calc(-50% + 135px));
+  }
+  .feature-4 {
+    transform: translate(calc(-50% + 200px), calc(-50% + 135px));
+  }
+}
 
 .feature-1::after,
 .feature-3::after {
@@ -384,6 +467,7 @@ nav {
   background-color: var(--white);
 }
 /* Responsive */
+
 @media (min-width: 0px) and (max-width: 767.98px) {
   .feature-1 {
     color: var(--white);
@@ -466,15 +550,9 @@ nav {
 }
 
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767.98px) {
   .nav__links {
     gap: 1rem;
-  }
-
-  .container h4 {
-    position: fixed;
-    top: 50%;
-    font-size: 3rem;
   }
 
   .container img {
@@ -484,5 +562,6 @@ nav {
   .footer {
     text-align: center;
     gap: 1rem;
+    flex-direction: column;
   }
 }
