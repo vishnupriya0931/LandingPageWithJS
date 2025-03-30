@@ -307,7 +307,7 @@ nav {
     left: 39.5%;
   }
   .container .catalog {
-    left: 1%;
+    left: -2%;
   }
   .feature-1 {
     transform: translate(calc(-50% - 260px), calc(-50% - 165px));
@@ -421,7 +421,7 @@ nav {
     }
   }
   body::before {
-    font-size: 50rem;
+    font-size: 44rem;
   }
   .nav__links {
     gap: 2rem !important;
@@ -431,6 +431,7 @@ nav {
   }
   .container .catalog {
     top: 25%;
+    left: -4%;
     position: fixed;
   }
   .feature-1 {
@@ -529,20 +530,206 @@ nav {
 }
 
 /* Responsive min 0px and Height 576px */
-@media (min-width: 0px) and (max-height: 576px) {
+@media (min-height: 420px) and (max-height: 576px) {
   .container img {
-    min-width: 155px;
+    min-width: 115px;
+    top: 47%;
   }
   .letter-s {
-    font-size: 25rem;
-  }  
+    font-size: 20rem;
+    top: 45%;
+  }
   .container h4 {
-    font-size: 3rem;
-  }    
+    font-size: 2.5rem;
+    top: 46%;
+  }
+  .container h5 {
+    top: 47%;
+  }
   .text__right {
-    transform: translate(calc(-75% + 250px), -50%) !important;
+    transform: translate(calc(-95% + 250px), -50%) !important;
   }
   .text__left {
-    transform: translate(calc(-25% - 250px), -50%) !important;
+    transform: translate(calc(15% - 250px), -50%) !important;
+  }
+  .feature-1 {
+    transform: translate(calc(-50% - 200px), calc(-25% - 105px));
+  }
+  .feature-2 {
+    transform: translate(calc(-50% + 200px), calc(-25% - 105px));
+  }
+  .feature-3 {
+    transform: translate(calc(-50% - 200px), calc(-50% + 105px));
+  }
+  .feature-4 {
+    transform: translate(calc(-50% + 200px), calc(-50% + 105px));
+  }
+  .container .explore {
+    position: fixed;
+    left: 42.5%;
+    padding: 0.5rem 1rem;
+    top: 83.5%;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  .container .catalog {
+    top: 40%;
+  }
+}
+/* Responsive min 0px and Height 419.98px */
+@media (min-height: 0px) and (max-height: 419.98px) {
+  .container img {
+    min-width: 85px;
+    top: 47%;
+  }
+  .letter-s {
+    font-size: 15rem;
+    top: 45%;
+  }
+  .container h4 {
+    font-size: 2.5rem;
+    top: 46%;
+  }
+  .container h5 {
+    top: 47%;
+  }
+  .text__right {
+    transform: translate(calc(-95% + 250px), -50%) !important;
+  }
+  .text__left {
+    transform: translate(calc(15% - 250px), -50%) !important;
+  }
+  .feature-1 {
+    transform: translate(calc(-65% - 200px), calc(-25% - 80px));
+  }
+  .feature-2 {
+    transform: translate(calc(-65% + 200px), calc(-25% - 80px));
+  }
+  .feature-3 {
+    transform: translate(calc(-65% - 200px), calc(-50% + 80px));
+  }
+  .feature-4 {
+    transform: translate(calc(-65% + 200px), calc(-50% + 80px));
+  }
+  .container .explore {
+    position: fixed;
+    left: 42.5%;
+    padding: 0.5rem 1rem;
+    top: 83.5%;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+.container .catalog {
+  top: 40%;
 }
 }
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+  @media (min-height: 420px) and (max-height: 576px) {
+    body::before {
+      font-size: 25rem;
+  }
+    .container img {
+      min-width: 115px;
+      top: 47%;
+    }
+    .letter-s {
+      font-size: 20rem;
+      top: 45%;
+    }
+    .container h4 {
+      font-size: 2.5rem;
+      top: 46%;
+    }
+    .container h5 {
+      top: 47%;
+    }
+    .text__right {
+      transform: translate(calc(-95% + 250px), -50%) !important;
+    }
+    .text__left {
+      transform: translate(calc(15% - 250px), -50%) !important;
+    }
+    .feature-1 {
+      transform: translate(calc(-50% - 200px), calc(-25% - 105px));
+    }
+    .feature-2 {
+      transform: translate(calc(-50% + 200px), calc(-25% - 105px));
+    }
+    .feature-3 {
+      transform: translate(calc(-50% - 200px), calc(-50% + 105px));
+    }
+    .feature-4 {
+      transform: translate(calc(-50% + 200px), calc(-50% + 105px));
+    }
+    .container .explore {
+      position: fixed;
+      left: 40.5%;
+      padding: 0.5rem 1rem;
+      top: 71.5%;
+    }
+    .btn {
+      padding: 0.5rem 1rem;
+    }
+    .container .catalog {
+      top: 40%;
+    }
+  }
+  /* Responsive min 0px and Height 419.98px */
+  @media (min-height: 0px) and (max-height: 419.98px) {
+    body::before {
+      font-size: 25rem;
+  }
+    .container img {
+      min-width: 85px;
+      top: 47%;
+    }
+    .letter-s {
+      font-size: 15rem;
+      top: 45%;
+    }
+    .container h4 {
+      font-size: 2.5rem;
+      top: 46%;
+    }
+    .container h5 {
+      top: 47%;
+    }
+    .text__right {
+      transform: translate(calc(-95% + 250px), -50%) !important;
+    }
+    .text__left {
+      transform: translate(calc(15% - 250px), -50%) !important;
+    }
+    .feature-1 {
+      transform: translate(calc(-65% - 200px), calc(-25% - 80px));
+    }
+    .feature-2 {
+      transform: translate(calc(-65% + 200px), calc(-25% - 80px));
+    }
+    .feature-3 {
+      transform: translate(calc(-65% - 200px), calc(-50% + 80px));
+    }
+    .feature-4 {
+      transform: translate(calc(-65% + 200px), calc(-50% + 80px));
+    }
+    .container .explore {
+      position: fixed;
+      left: 40.5%;
+      padding: 0.5rem 1rem;
+      top: 70.5%;
+    }
+    .btn {
+      padding: 0.5rem 1rem;
+    }
+  .container .catalog {
+    top: 40%;
+  }
+  .footer{
+    bottom: 0.5rem;
+  }
+  }
+}
+
