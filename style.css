@@ -126,15 +126,12 @@ nav {
   justify-content: top;
   gap: 1rem;
 }
-
-.fa-solid {
-  font-weight: 900;
-  right: 10px;
+.fa-xmark{
+  right: 5%;
   position: absolute;
-  top: 2%;
+  margin-top: 8.5%;
   font-size: 20px;
 }
-
 .sidebar.active {
   transform: translateX(0);
 }
